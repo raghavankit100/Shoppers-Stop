@@ -1,126 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
-        @layer utilities {
-          .content-auto {
-            content-visibility: auto;
-          }
-          .underline-red {
-        position: relative;
-        transition: 0.3s ease;
-        z-index: 2;
-    }
-
-    .underline-red::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -11px;
-        width: 100%;
-        height: 2px; 
-        background-color: transparent;
-        transition: 0.3s ease;
-    }
-
-    .underline-red:hover::after {
-        background-color: red; 
-    }
-    .underline-black {
-        position: relative;
-        transition: 0.3s ease;
-    }
-
-    .underline-black::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -20px; /* Adjust the thickness of the underline */
-        width: 100%;
-        height: 2px; /* Adjust the thickness of the underline */
-        background-color: black; /* Default color */
-        transition: 0.3s ease;
-        
-    }
-
-    .underline-black:hover::after {
-        background-color: black; /* Change to black */
-    }
-    
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
         }
-      </style>
+        .underline-red {
+          position: relative;
+          transition: 0.3s ease;
+          z-index: 2;
+        }
 
-    <link rel="stylesheet" href="external-css.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap" rel="stylesheet">
+        .underline-red::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -11px;
+          width: 100%;
+          height: 2px;
+          background-color: transparent;
+          transition: 0.3s ease;
+        }
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Online Shopping India - Shop for clothes, shoes, Bags, watches @ Shoppersstop.com</title>
+        .underline-red:hover::after {
+          background-color: red;
+        }
+        .underline-black {
+          position: relative;
+          transition: 0.3s ease;
+        }
 
-</head>
-<body>
-   <header class="w-full flex items-center justify-center sticky top-0 bg-white shadow-sm pb-3">
-   
-        <div id="header-left-section" class="left-section flex items-center ml-7 justify-around">
-            <div class="text-links text-zinc-500 pr-40" id="text-links">
-            <a href="../Neeraj/Header Links/first-citizen-club.html" class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2 ">First Citizen Club</a>
-            <a href="../Neeraj/Header Links/all-stores.html" class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2">All Stores</a>
-            <a href="../Neeraj/Header Links/help&support.html" class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2">Help & Support</a>
+        .underline-black::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -20px; /* Adjust the thickness of the underline */
+          width: 100%;
+          height: 2px; /* Adjust the thickness of the underline */
+          background-color: black; /* Default color */
+          transition: 0.3s ease;
+        }
+
+        .underline-black:hover::after {
+          background-color: black; /* Change to black */
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(0); /* Stay on first image for 10 seconds */
+        }
+        30% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-100%);
+        }
+        60% {
+          transform: translateX(-100%);
+        }
+        70% {
+          transform: translateX(-200%);
+        }
+        90% {
+          transform: translateX(-200%);
+        }
+        100% {
+          transform: translateX(-200%); /* Keep the last image still */
+        }
+      }
+
+      .animate-scrolling-images {
+        animation: scroll 30s linear 1; /* Total animation duration is 30s (10s per image, 2s for scrolling) */
+      }
+      .animate-scrolling-images-2 {
+        animation: scroll 10s linear 1;
+      }
+    </style>
+
+    <link rel="stylesheet" href="external-css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>
+      Online Shopping India - Shop for clothes, shoes, Bags, watches @
+      Shoppersstop.com
+    </title>
+  </head>
+  <body>
+    <header
+      class="w-full flex items-center justify-center sticky top-0 bg-white shadow-sm pb-3 z-30 "
+    >
+      <div
+        id="header-left-section"
+        class="left-section flex items-center ml-7 justify-around"
+      >
+        <div class="text-links text-zinc-500 pr-40" id="text-links">
+          <a
+            href="../Neeraj/Header Links/first-citizen-club.html"
+            class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2"
+            >First Citizen Club</a
+          >
+          <a
+            href="../Neeraj/Header Links/all-stores.html"
+            class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2"
+            >All Stores</a
+          >
+          <a
+            href="../Neeraj/Header Links/help&support.html"
+            class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2"
+            >Help & Support</a
+          >
         </div>
         <div class="top-logo">
-            <a href="#"><img src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/shopperstopimgaes_web/newLogo.svg" alt="logo" title="SHOPPERS STOP" width="250px" class="desk-logo"></a>
+          <a href="#"
+            ><img
+              src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/shopperstopimgaes_web/newLogo.svg"
+              alt="logo"
+              title="SHOPPERS STOP"
+              width="250px"
+              class="desk-logo"
+          /></a>
         </div>
+      </div>
+
+      <div class="right-section flex items-center">
+        <div class="relative">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search Products & Brands"
+            class="border-b w-64 ml-32 pb-3 pt-3 focus:outline-none focus:border-black transition-colors duration-300"
+          />
         </div>
+        <div id="right-icons-top" class="flex items-center pl-4 text-2xl">
+          <a href=""> <i class="fa-regular fa-heart px-4"></i></a>
+          <a href="../Neeraj/Header Links/my-cart.html">
+            <img
+              src="https://www.freeiconspng.com/thumbs/bags-icon/bag-icon-6.png"
+              width="26px"
+              alt=""
+          /></a>
+          <a href=""><i class="fa-regular fa-user pl-4"></i></a>
+        </div>
+      </div>
+    </header>
+    <div class="flex justify-center items-center">
+      <ul class="flex text-lg font-semibold font-serif tracking-wide pt-1 pb-0">
+        <a href=""
+          ><li class="mx-7 text-slate-700 underline-red hover:underline-red">
+            CATEGORIES
+          </li></a
+        >
+        <a href=""
+          ><li class="mx-7 hover:underline-red" id="luxe-title">LUXE</li></a
+        >
+        <a href=""
+          ><li class="mx-7 text-slate-700 hover:underline-red">BARGAINS</li></a
+        >
+        <a href=""
+          ><li class="mx-7 text-slate-700 hover:underline-red">STYLE HUB</li></a
+        >
+      </ul>
+    </div>
+
+    <div class="flex justify-center items-center">
+      <ul class="flex text-sm font-semibold font-sans tracking-wider pt-7 pb-5">
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">MEN</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">WOMEN</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">BEAUTY</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">WATCHES</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">KIDS</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">HOMESTOP</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">GIFTS</li></a
+        >
+        <a href=""
+          ><li class="px-7 text-gray-600 hover:underline-black">BRANDS</li></a
+        >
+      </ul>
+    </div>
+
+    <hr />
+    <main>
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h64/h70/32117147140126/ss-web_270224d.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=SpringSummer2024Collection%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AAll&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h98/h92/32015952117790/web_3093.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=newArrival-desc&q=private_brands%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AAll&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h1e/h41/32004481253406/Louis-Philippe-%26-Van-Heusen-web_89.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hc3/h8b/32055680860190/ss24-coupon-web_37309.jpg"
+            class="cursor-pointer"
+            alt=""
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h87/he2/31703506190366/New-10-web_Eoss-23.jpg"
+            class="cursor-pointer"
+            alt=""
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h1e/h75/32182610427934/hdfc-strip-web---2024--03--05--home-page-coupon-strip.jpg"
+            class="cursor-pointer"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h59/hf6/29782554705950/Icons-2-Web---000-new-home-page--2023-april-11.jpg"
+          class="cursor-pointer"
+          alt=""
+        />
+      </div>
 
 
-        <div class="right-section flex items-center">
-           <div class="relative ">
-            <input type="text" id="search-bar" placeholder="Search Products & Brands" class="border-b w-64 ml-32 pb-3 pt-3 focus:outline-none focus:border-black transition-colors duration-300">
-            
-        </div>
-        <div id="right-icons-top" class="flex items-center pl-4 text-2xl ">
+      <div class="w-9/12 flex justify-center items-center align-middle m-auto pb-7 pt-4 ">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h5a/h6e/32018845138974/strips-web-Featured-Brands_761.jpg" class="cursor-pointer" alt="">
+      </div>
 
-          <a href=""> <i class="fa-regular fa-heart px-4 "></i></a>
-          <a href="../Neeraj/Header Links/my-cart.html"> <img src="https://www.freeiconspng.com/thumbs/bags-icon/bag-icon-6.png"  width="26px"  alt=""></a>
-           <a href=""><i class="fa-regular fa-user pl-4"></i></a>
 
-        </div>
-        </div>
-    
-   </header>
-   <div class="flex justify-center items-center">
-    <ul class="flex text-lg font-semibold font-serif tracking-wide pt-1 pb-0 ">
-        <a href=""><li class="mx-7 text-slate-700 underline-red hover:underline-red">CATEGORIES</li></a>
-        <a href=""><li class="mx-7 hover:underline-red" id="luxe-title">LUXE</li></a>
-        <a href=""><li class="mx-7 text-slate-700 hover:underline-red">BARGAINS</li></a>
-        <a href=""><li class="mx-7 text-slate-700 hover:underline-red">STYLE HUB</li></a>
-    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div
+      class="w-9/12 h-80 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+    >
+      <i
+        class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+      ></i>
+      <div class="flex animate-scrolling-images">
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h6e/hd2/32124878094366/Web_al123.jpg"
+          class="cursor-pointer  "
+          onclick="window.location.href='https://www.shoppersstop.com/virtual-category-timexglobal/c-Timexglobal';"
+        />
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h07/h2b/31920865640478/Stay%20in%20Power%201840%20X%20500--feature-brands-nars-phmlp-2024-01--30.jpg"
+          class="cursor-pointer"
+          onclick="window.location.href='https://www.shoppersstop.com/brand/nars?sort=topRated&q=%3AnewArrival-desc%3AinStockFlag%3Atrue%3Abrands%3ANARS&startRange=&endRange=#';"
+        />
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/haa/hd0/32201882206238/Lee-web_k09k.jpg"
+          class="cursor-pointer"
+          onclick="window.location.href='https://www.shoppersstop.com/brand/lee?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ALEE%3Al1category%3AWomen&startRange=&endRange=&show=Page#';"
+        />
+      </div>
+      <i
+        class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+      ></i>
+    </div>
+
+
+
+<div class="w-9/12 flex justify-center items-center align-middle m-auto pb-7 pt-20 ">
+    <img src="https://sslimages.shoppersstop.com/sys-master/root/hc3/hbc/32018844942366/strips-web-Top-Rated-Categories_920.jpg" alt="">
 </div>
 
 
-<div class="flex justify-center items-center">
-    <ul class="flex text-sm font-semibold font-sans tracking-wider pt-7 pb-5 ">
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">MEN</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">WOMEN</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">BEAUTY</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">WATCHES</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">KIDS</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">HOMESTOP</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">GIFTS</li></a>
-        <a href=""><li class="px-7 text-gray-600  hover:underline-black">BRANDS</li></a>
-    </ul>
-</div>
-
-<hr>
-<main>
-    <img src="" alt="">
-</main>
-</body>
+    </main>
+  </body>
 </html>
