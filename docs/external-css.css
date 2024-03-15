@@ -9,3 +9,15 @@
     padding-right: 10px; 
     
 }
+#luxe-title {
+    font-family: Cormorant, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+   
+    letter-spacing: .25rem;
+    text-align: left;
+    color: #D3A84F;
+}

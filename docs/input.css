@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .underline-red {
+        position: relative;
+        transition: 0.3s ease;
+        z-index: 2;
+    }
+
+    .underline-red::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -11px;
+        width: 100%;
+        height: 2px; 
+        background-color: transparent;
+        transition: 0.3s ease;
+    }
+
+    .underline-red:hover::after {
+        background-color: red; 
+    }
+    .underline-black {
+        position: relative;
+        transition: 0.3s ease;
+    }
+
+    .underline-black::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -20px; /* Adjust the thickness of the underline */
+        width: 100%;
+        height: 2px; /* Adjust the thickness of the underline */
+        background-color: black; /* Default color */
+        transition: 0.3s ease;
+        
+    }
+
+    .underline-black:hover::after {
+        background-color: black; /* Change to black */
+    }
+}
