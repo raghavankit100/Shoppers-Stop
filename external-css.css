@@ -1,0 +1,11 @@
+* {
+    font-family: Barlow, sans-serif;
+}
+
+#search-bar {
+    background: url(https://static.thenounproject.com/png/888719-200.png) no-repeat right;
+    background-size: contain; 
+   background-origin: content-box;
+    padding-right: 10px; 
+    
+}
