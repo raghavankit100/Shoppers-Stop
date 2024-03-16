@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth ">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,15 +38,15 @@
           content: "";
           position: absolute;
           left: 0;
-          bottom: -20px; 
+          bottom: -20px;
           width: 100%;
-          height: 2px; 
-          background-color: black; 
+          height: 2px;
+          background-color: black;
           transition: 0.3s ease;
         }
 
         .underline-black:hover::after {
-          background-color: black; 
+          background-color: black;
         }
       }
 
@@ -55,7 +55,7 @@
           transform: translateX(0);
         }
         20% {
-          transform: translateX(0); 
+          transform: translateX(0);
         }
         30% {
           transform: translateX(-100%);
@@ -85,7 +85,11 @@
       }
     </style>
 
-<link rel="shortcut icon" href="https://lh3.googleusercontent.com/-wuudPbVCju_F-Eqk8wK-o3cY4JimEsSdwbxX89wil8AejRqqxAx_C8JHkCFTmBhnEkC0Y4_aHae3klyeWFaNAA2fH73S5biaEM1ucLN" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/-wuudPbVCju_F-Eqk8wK-o3cY4JimEsSdwbxX89wil8AejRqqxAx_C8JHkCFTmBhnEkC0Y4_aHae3klyeWFaNAA2fH73S5biaEM1ucLN"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="external-css.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -114,14 +118,20 @@
     </title>
   </head>
   <body>
-    <header 
-      class="w-full flex items-center justify-center sticky top-0 bg-white shadow-sm pb-3 z-30 "
+    <header
+      id="header-main"
+      class="w-full flex items-center justify-center sticky top-0 bg-white shadow-sm pb-3 z-30"
     >
       <div
         id="header-left-section"
         class="left-section flex items-center ml-7 justify-around"
       >
-        <div class="text-links text-zinc-500 pr-40" id="text-links">
+        <i id="hamburger-small-left" class="fa-solid fa-bars"></i>
+        <div
+          id="text-links-left"
+          class="text-links text-zinc-500 pr-40"
+          id="text-links"
+        >
           <a
             href="https://www.shoppersstop.com/firstCitizenNonMember"
             class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2"
@@ -134,11 +144,11 @@
           >
           <a
             href="https://www.shoppersstop.com/contactUs"
-            class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2"
+            class="mr-10 tracking-wide leading-4 font-semibold text-xs px-0 py-2 xl:px-"
             >Help & Support</a
           >
         </div>
-        <div class="top-logo">
+        <div id="top-logo" class="top-logo">
           <a href="#"
             ><img
               src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/shopperstopimgaes_web/newLogo.svg"
@@ -160,18 +170,22 @@
           />
         </div>
         <div id="right-icons-top" class="flex items-center pl-4 text-2xl">
+          <i
+            id="search-icon-after-small-screen"
+            class="fa-solid fa-magnifying-glass cursor-pointer"
+          ></i>
           <a href="#"> <i class="fa-regular fa-heart px-4"></i></a>
           <a href="https://www.shoppersstop.com/cart">
-            <img
-              src="https://www.freeiconspng.com/thumbs/bags-icon/bag-icon-6.png"
-              width="26px"
-              alt=""
-          /></a>
-          <a href="#"><i class="fa-regular fa-user pl-4"></i></a>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+          <a href="#"
+            ><i id="profile-icon-top-right" class="fa-regular fa-user pl-4"></i
+          ></a>
         </div>
       </div>
     </header>
-    <div class="flex justify-center items-center">
+
+    <div id="men-women-navbar" class="flex justify-center items-center">
       <ul class="flex text-lg font-semibold font-serif tracking-wide pt-1 pb-0">
         <a href=""
           ><li class="mx-7 text-slate-700 underline-red hover:underline-red">
@@ -190,7 +204,91 @@
       </ul>
     </div>
 
-    <div class="flex justify-center items-center">
+    <section class="option-list">
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hb7/h46/32032602783774/bargains_navigation-banners------msite-new-anavigation24218212.jpg"
+            alt=""
+          />
+          <h3>Bargai%s</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h8a/h42/32063094423582/Summer-Navigation-Bar-men_n1.jpg"
+            alt=""
+          />
+          <h3>Men</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h38/h43/32063094489118/Summer-Navigation-Bar-Women_n2.jpg"
+            alt=""
+          />
+          <h3>WOMEN</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h36/h23/32032603799582/Summer-Navigation-Bar-watches_n4.jpg"
+            alt=""
+          />
+          <h3>Watches</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hf0/h25/32032603832350/Summer-Navigation-Bar-beauty_n6.jpg"
+            alt=""
+          />
+          <h3>Beauty</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h47/h26/32032603865118/Summer-Navigation-Bar-gift_n7.jpg"
+            alt=""
+          />
+          <h3>Gifts</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h9e/h26/32032603897886/Summer-Navigation-Bar-homestop_n8.jpg"
+            alt=""
+          />
+          <h3>Homestop</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h58/h29/32032603930654/Summer-Navigation-Bar-kids_n9.jpg"
+            alt=""
+          />
+          <h3>Kids</h3></a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/haf/h29/32032603963422/Summer-Navigation-Bar-luxe_n10.jpg"
+            alt=""
+          />
+          <h3>Luxe</h3></a
+        >
+      </div>
+    </section>
+
+    <div id="men-women-navbar" class="flex justify-center items-center">
       <ul class="flex text-sm font-semibold font-sans tracking-wider pt-7 pb-5">
         <a href=""
           ><li class="px-7 text-gray-600 hover:underline-black">MEN</li></a
@@ -219,11 +317,15 @@
       </ul>
     </div>
 
-    <hr />
+    <hr id="men-women-navbar" />
     <main>
-      <a href="#"">  <img src="https://cdn-icons-png.flaticon.com/512/4196/4196777.png" width="46px" class="fixed bottom-2 right-2.5  " alt=""></a>
-
-
+      <a href="#">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4196/4196777.png"
+          width="46px"
+          class="fixed bottom-2 right-2.5"
+          alt=""
+      /></a>
 
       <div
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
@@ -285,208 +387,295 @@
         />
       </div>
 
-
-      <div class="w-9/12 flex justify-center items-center align-middle m-auto pb-7 pt-4 ">
-        <img src="https://sslimages.shoppersstop.com/sys-master/root/h5a/h6e/32018845138974/strips-web-Featured-Brands_761.jpg" class="cursor-pointer" alt="">
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pb-7 pt-4"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h5a/h6e/32018845138974/strips-web-Featured-Brands_761.jpg"
+          class="cursor-pointer"
+          alt=""
+        />
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <div
-      class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
-    >
-      <i
-        class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-      ></i>
-      <div class="flex animate-scrolling-images">
-        <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/h6e/hd2/32124878094366/Web_al123.jpg"
-          class="cursor-pointer   object-cover w-full h-full"
-          onclick="window.location.href='https://www.shoppersstop.com/virtual-category-timexglobal/c-Timexglobal';"
-        />
-        <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/h07/h2b/31920865640478/Stay%20in%20Power%201840%20X%20500--feature-brands-nars-phmlp-2024-01--30.jpg"
-          class="cursor-pointer object-cover w-full h-full"
-          onclick="window.location.href='https://www.shoppersstop.com/brand/nars?sort=topRated&q=%3AnewArrival-desc%3AinStockFlag%3Atrue%3Abrands%3ANARS&startRange=&endRange=#';"
-        />
-        <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/haa/hd0/32201882206238/Lee-web_k09k.jpg"
-          class="cursor-pointer object-cover w-full h-full"
-          onclick="window.location.href='https://www.shoppersstop.com/brand/lee?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ALEE%3Al1category%3AWomen&startRange=&endRange=&show=Page#';"
-        />
-      </div>
-      <i
-        class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-      ></i>
-    </div>
-
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-20 ">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hc3/hbc/32018844942366/strips-web-Top-Rated-Categories_920.jpg" alt="">
-</div>
-
-
-
-            <div class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6">
-              <div class="flex flex-wrap ">
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/h01/h84/32266433658910/lingerie-web_Hp-14-03-2024.jpg" alt="Image 1" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ATRIUMPH%3Abrands%3AAMANTE%3Abrands%3AENAMOR%3Abrands%3ASWEET%2BDREAMS%3Abrands%3ANYKD%2BBY%2BNYKAA%3Abrands%3AWACOAL';">
-
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/h42/hff/32097829158942/Kidswear-web-7920.jpg" alt="Image 2" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/kids-all-kids-clothing/c-C1000013?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=';">
-
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/hea/hfc/32097829290014/Jewellery-web_93012.jpg" alt="Image 3" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-jewellery-fashion-semi-precious/c-A209510?q=%3AtopRated%3AinStockFlag%3Atrue&startRange=&endRange=&sort=topRated';">
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/hd3/hed/32117156806686/Premium-Makeup-web_270224fc.jpg" alt="Image 4" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/beauty-make-up/c-B1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AAnastasia%2BBeverly%2BHills%3Abrands%3ANARS%3Abrands%3AMAC%3Abrands%3ABOBBI%2BBROWN%3Abrands%3ASMASHBOX&text=&startRange=&endRange=#';">
-
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/h5c/hef/32097829683230/Home-Essentials-web_01029.jpg" alt="Image 5" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/homeware-all-homeware/c-C10000011';">
-
-
-
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/he9/h5d/32242137104414/Sunglasses-web_2029711auo.jpg" alt="Image 6" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/search/?q=sunglasses%3AtopRated%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3AWomen%3Al3category%3ARectangle%3Al3category%3ACat%2BEye%3Al3category%3AOval%3Al3category%3AFrames%2B%2526%2BContact%2BLenses';">
-
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/h66/hd5/32219005779998/Travel-%26-Luggage-web_55302009lie.jpg" alt="Image 7" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/men-accessories-travel/c-A102080?q=%3AtopRated%3AinStockFlag%3Atrue%3Al4category%3AHard%2BLuggage%3Al4category%3ASoft%2BLuggage&text=&startRange=&endRange=';">
-
-                <img src="https://sslimages.shoppersstop.com/sys-master/root/hfa/h60/32242137038878/Handbags-web_1132028han.jpg" alt="Image 8" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-bags-wallets/c-A2025?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';">
-
-              </div>
-
-
-          </div>
-
-
-
-          <div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-5 pb-3 ">
-            <img src="https://sslimages.shoppersstop.com/sys-master/root/h9c/h63/32018840977438/strips-web-Covetable-Beauty_989.jpg" alt="">
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h6e/hd2/32124878094366/Web_al123.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-timexglobal/c-Timexglobal';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h07/h2b/31920865640478/Stay%20in%20Power%201840%20X%20500--feature-brands-nars-phmlp-2024-01--30.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/nars?sort=topRated&q=%3AnewArrival-desc%3AinStockFlag%3Atrue%3Abrands%3ANARS&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/haa/hd0/32201882206238/Lee-web_k09k.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/lee?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ALEE%3Al1category%3AWomen&startRange=&endRange=&show=Page#';"
+          />
         </div>
-
-
-
-
-
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
 
       <div
-      class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
-    >
-      <i
-        class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-      ></i>
-      <div class="flex animate-scrolling-images">
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-20"
+      >
         <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/hf5/h91/32163259219998/Versace_Desktop%20%281%29--new-offer-banner-2024-03-04.jpg"
-          class="cursor-pointer   object-cover w-full h-full"
-          onclick="window.location.href='https://www.shoppersstop.com/brand/versace?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AVERSACE%3Al1category%3ABeauty&startRange=&endRange=&show=Page#';"
-        />
-        <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/ha8/hbf/32201895346206/CL_Web----2024--03--08--new-banners.jpg"
-          class="cursor-pointer object-cover w-full h-full"
-          onclick="window.location.href='https://www.shoppersstop.com/brand/clinique?sort=discount-desc&q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ACLINIQUE&startRange=&endRange=#';"
-        />
-        <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/h6b/hbe/32156390719518/Armani_Web------new-creative-2024-03--01--march.jpg"
-          class="cursor-pointer object-cover w-full h-full"
-          onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=giorgio+armani%3Arelevance%3AinStockFlag%3Atrue%3Abrands%3AARMANI%3Al1category%3ABeauty&startRange=&endRange=#';"
+          src="https://sslimages.shoppersstop.com/sys-master/root/hc3/hbc/32018844942366/strips-web-Top-Rated-Categories_920.jpg"
+          alt=""
         />
       </div>
-      <i
-        class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-      ></i>
-    </div>
 
-   <div class="flex justify-center text-4xl italic py-11 "> <p>Timeless Perfume Luxe</p></div>
-    
-  
-     
-   <div class="flex justify-center">
-    <div class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12 " style="scrollbar-width: none;">
-      <div class="flex gap-x-2">
-       
-        <div class="border cursor-pointer " onclick="window.location.href='https://www.shoppersstop.com/p-S19YSL2050358OR_base/colorChange/S19YSL2050358OR_NoColour';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/h15/h9b/28615747928094/S19YSL2050358OR_NoColour.jpg_136Wx204H"  >
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Yves Saint Laurent</h3>
-          <h4 class="text-gray-500 pl-4 pr-2 ">New Y Eau De Parfum S for Men</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹8600</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
-        
-        <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A21GUC9382167OR_base/colorChange/A21GUC9382167OR_NoColour';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/haf/hcb/28623492546590/A21GUC9382167OR_NoColour.jpg_136Wx204H" >
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Gucci</h3>
-          <h4 class="text-gray-500 pl-4 pr-2">Guilty Eau de Parfum for Him</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹11050</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
-        <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-SS22DG2015961OR_base/colorChange/SS22DG2015961OR_NoColour';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/h83/ha0/28932573823006/SS22DG2015961OR_NoColour.jpg_136Wx204H" >
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Dolce & Gabbana</h3>
-          <h4 class="text-gray-500 pl-4 pr-2">Light Blue Forever Eau de Parfum for Her</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹4165</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
-        <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-SS22BUR838016_base/colorChange/SS22BUR838016_NoColour';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/hd6/h2d/28071389986846/SS22BUR838016_NoColour.jpg_136Wx204H" >
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Burberry</h3>
-          <h4 class="text-gray-500 pl-4 pr-2">HERO EDP 100 ml</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹10300</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
-        <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A16VER3825745OR_base/colorChange/A16VER3825745OR_NoColour';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/h8d/hbb/30702457716766/A16VER3825745OR_NoColour.jpg_136Wx204H">
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Versace</h3>
-          <h4 class="text-gray-500 pl-4 pr-2">Dylan Blue Eau De Toilette for Men</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹8600</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
-        <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-205700451/colorChange/205700451_UNMAPPED';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/hf8/hdb/13976217813022/205700451_9999.jpg_136Wx204H">
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Burberry</h3>
-          <h4 class="text-gray-500 pl-4 pr-2">Eau de Parfum for Women</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹7250</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
-        <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-S8VER05071469OR_base/colorChange/S8VER05071469OR_NoColour';">
-          <img src="https://sslimages.shoppersstop.com/sys-master/images/h31/h70/28616808431646/S8VER05071469OR_NoColour.jpg_136Wx204H">
-          <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Versace</h3>
-          <h4 class="text-gray-500 pl-4 pr-2">Crystal Noir Eau De Toilette for Women</h4>
-          <p class="text-black font-semibold py-8 pl-4">₹8600</p>
-          <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-        </div>
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <div class="flex flex-wrap">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h01/h84/32266433658910/lingerie-web_Hp-14-03-2024.jpg"
+            alt="Image 1"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ATRIUMPH%3Abrands%3AAMANTE%3Abrands%3AENAMOR%3Abrands%3ASWEET%2BDREAMS%3Abrands%3ANYKD%2BBY%2BNYKAA%3Abrands%3AWACOAL';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h42/hff/32097829158942/Kidswear-web-7920.jpg"
+            alt="Image 2"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/kids-all-kids-clothing/c-C1000013?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hea/hfc/32097829290014/Jewellery-web_93012.jpg"
+            alt="Image 3"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-jewellery-fashion-semi-precious/c-A209510?q=%3AtopRated%3AinStockFlag%3Atrue&startRange=&endRange=&sort=topRated';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hd3/hed/32117156806686/Premium-Makeup-web_270224fc.jpg"
+            alt="Image 4"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/beauty-make-up/c-B1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AAnastasia%2BBeverly%2BHills%3Abrands%3ANARS%3Abrands%3AMAC%3Abrands%3ABOBBI%2BBROWN%3Abrands%3ASMASHBOX&text=&startRange=&endRange=#';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h5c/hef/32097829683230/Home-Essentials-web_01029.jpg"
+            alt="Image 5"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/homeware-all-homeware/c-C10000011';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/he9/h5d/32242137104414/Sunglasses-web_2029711auo.jpg"
+            alt="Image 6"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?q=sunglasses%3AtopRated%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3AWomen%3Al3category%3ARectangle%3Al3category%3ACat%2BEye%3Al3category%3AOval%3Al3category%3AFrames%2B%2526%2BContact%2BLenses';"
+          />
 
-        
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h66/hd5/32219005779998/Travel-%26-Luggage-web_55302009lie.jpg"
+            alt="Image 7"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/men-accessories-travel/c-A102080?q=%3AtopRated%3AinStockFlag%3Atrue%3Al4category%3AHard%2BLuggage%3Al4category%3ASoft%2BLuggage&text=&startRange=&endRange=';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hfa/h60/32242137038878/Handbags-web_1132028han.jpg"
+            alt="Image 8"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-bags-wallets/c-A2025?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';"
+          />
+        </div>
       </div>
-    </div>
-  </div>
-  
-    
 
-    
-     
-  
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-5 pb-3"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h9c/h63/32018840977438/strips-web-Covetable-Beauty_989.jpg"
+          alt=""
+        />
+      </div>
 
-
-
-
- <div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-5 pb-3 ">
-            <img src="https://sslimages.shoppersstop.com/sys-master/root/h82/hc0/32018844811294/strips-web-Shoppersstop-Selects_2893.jpg" alt="">
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hf5/h91/32163259219998/Versace_Desktop%20%281%29--new-offer-banner-2024-03-04.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/versace?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AVERSACE%3Al1category%3ABeauty&startRange=&endRange=&show=Page#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/ha8/hbf/32201895346206/CL_Web----2024--03--08--new-banners.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/clinique?sort=discount-desc&q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ACLINIQUE&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h6b/hbe/32156390719518/Armani_Web------new-creative-2024-03--01--march.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=giorgio+armani%3Arelevance%3AinStockFlag%3Atrue%3Abrands%3AARMANI%3Al1category%3ABeauty&startRange=&endRange=#';"
+          />
         </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
 
+      <div class="flex justify-center text-4xl italic py-11">
+        <p>Timeless Perfume Luxe</p>
+      </div>
 
-
+      <div class="flex justify-center">
         <div
+          class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12"
+          style="scrollbar-width: none"
+        >
+          <div class="flex gap-x-2">
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S19YSL2050358OR_base/colorChange/S19YSL2050358OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h15/h9b/28615747928094/S19YSL2050358OR_NoColour.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">
+                Yves Saint Laurent
+              </h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                New Y Eau De Parfum S for Men
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹8600</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A21GUC9382167OR_base/colorChange/A21GUC9382167OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/haf/hcb/28623492546590/A21GUC9382167OR_NoColour.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Gucci</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                Guilty Eau de Parfum for Him
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹11050</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-SS22DG2015961OR_base/colorChange/SS22DG2015961OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h83/ha0/28932573823006/SS22DG2015961OR_NoColour.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">
+                Dolce & Gabbana
+              </h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                Light Blue Forever Eau de Parfum for Her
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹4165</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-SS22BUR838016_base/colorChange/SS22BUR838016_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hd6/h2d/28071389986846/SS22BUR838016_NoColour.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Burberry</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">HERO EDP 100 ml</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹10300</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A16VER3825745OR_base/colorChange/A16VER3825745OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h8d/hbb/30702457716766/A16VER3825745OR_NoColour.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Versace</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                Dylan Blue Eau De Toilette for Men
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹8600</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-205700451/colorChange/205700451_UNMAPPED';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hf8/hdb/13976217813022/205700451_9999.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Burberry</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">Eau de Parfum for Women</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹7250</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S8VER05071469OR_base/colorChange/S8VER05071469OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h31/h70/28616808431646/S8VER05071469OR_NoColour.jpg_136Wx204H"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Versace</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                Crystal Noir Eau De Toilette for Women
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹8600</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-5 pb-3"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h82/hc0/32018844811294/strips-web-Shoppersstop-Selects_2893.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
         class="w-9/12 h-80 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
         <i
@@ -495,7 +684,7 @@
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h4d/he9/32097829814302/ss-selects-web-KASHISH-%26-STOP_w2.jpg"
-            class="cursor-pointer  "
+            class="cursor-pointer"
             onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AKASHISH%3Abrands%3ASTOP%3Abrands%3AHAUTE%2BCURRY&text=&startRange=&endRange=';"
           />
           <img
@@ -514,834 +703,1125 @@
         ></i>
       </div>
 
-
-      <div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-5 pb-1 ">
-        <img src="https://sslimages.shoppersstop.com/sys-master/root/h5b/h67/32018840846366/strips-web-What_s-Trending-In_840.jpg" alt="">
-    </div>
-
-
-    
-                   <div
-    class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
-  >
-    <i
-      class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-    ></i>
-    <div class="flex animate-scrolling-images">
-      <img
-        src="https://sslimages.shoppersstop.com/sys-master/root/h87/h3e/32262975979550/web.jpg"
-        class="cursor-pointer  "
-        onclick="window.location.href='https://www.shoppersstop.com/search/?q=SpringSummer2024Collection%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3AWomen%3Al1category%3ABOYS%2B%2526%2BLeggings%3Al3category%3AT-Shirts%2B%2526%2BPolos%3Al3category%3ATopwear&text=SpringSummer2024Collection';"
-      />
-      <img
-        src="https://sslimages.shoppersstop.com/sys-master/root/h02/hee/32266429005854/web_140324f.jpg"
-        class="cursor-pointer"
-        onclick="window.location.href='https://www.shoppersstop.com/search/?q=SpringSummer2024Collection%3AtopRated%3AinStockFlag%3Atrue%3Al3category%3AEthnic%2BSets%3Al3category%3AEthnic%2BDresses%3Al3category%3AKurtas%252C%2Bkurtis%2B%2526%2Btops%3Al3category%3ASandals%2B%2526%2BFloaters';"
-      />
-      <img
-        src="https://sslimages.shoppersstop.com/sys-master/root/ha0/ha9/32256045711390/accessories-web_Accessories-Page_13-03-2024.jpg"
-        class="cursor-pointer"
-        onclick="window.location.href='https://www.shoppersstop.com/Accessories_2024';"
-      />
-    </div>
-    <i
-      class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-    ></i>
-  </div>
-
-  <div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h65/h49/32256038338590/1840x180_Holi-Fest-13-03-2024.jpg" alt="">
-</div>
-
-
-
-
-
-                                              <div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hd5/hcd/32262961233950/Static-Web-Denims_Holi-2024.jpg"
-    class="cursor-pointer  "
-    onclick="window.location.href='https://www.shoppersstop.com/search/?q=%3AtopRated%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3ABOYS%3Al1category%3AWomen%3Al1category%3AGIRLS%3Al3category%3AJeans%3Al3category%3AJeans%2B%2526%2BLeggings';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h46/hc3/32262961561630/Static-Web-T-shirt_Holi-14-03-2024.jpg"
-    class="cursor-pointer"
-    onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3ABOYS%3Al1category%3AWomen%3Al1category%3AGIRLS%3Al4category%3ATops%2B%2526%2BTees%3AswatchColors%3Awhite%3Al4category%3AT-Shirts';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hd6/h60/32262962315294/Static-Web-Sunglasses_Holi-14-03-2024.jpg"
-    class="cursor-pointer"
-    onclick="window.location.href='https://www.shoppersstop.com/homeware-kitchen-bar-drinkware/c-A802050?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>              
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/hc7/h80/32266438246430/Home-Refresh-web_173029re.jpg" alt="">
-</div>
-
-
-                     <div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h28/h6e/32262970081310/Dining-web_18309diw.jpg"
-    class="cursor-pointer  "
-    onclick="window.location.href='https://www.shoppersstop.com/homeware-dining/c-A8025';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h32/h16/32262971818014/Living-web_7392ari.jpg"
-    class="cursor-pointer"
-    onclick="window.location.href='https://www.shoppersstop.com/homeware-home-furnishing/c-A8040';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h7e/h6b/32262972211230/Bedding-web_12309bed.jpg"
-    class="cursor-pointer"
-    onclick="window.location.href='https://www.shoppersstop.com/homeware-bedding/c-A8010';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h91/hb8/32018836979742/strips-web-Online-Exclusive_893.jpg" alt="">
-</div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2">
-  <div class="flex flex-wrap ">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hf2/h2b/32015947137054/Indian-Wear_online-exclusive-4-widget-web_0289.jpg" alt="Image 1" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AJUNIPER%3Abrands%3AMYSHKA%3Abrands%3AJANASYA%3Abrands%3ASTYLUM%3Abrands%3AZIYAA%3Abrands%3ASCAKHI%3Abrands%3AHOUSE%2BOF%2BBEGUM';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hdf/h2b/32015950774302/Western_online-exclusive-4-widget-web_9023.jpg" alt="Image 2" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ARARE%3Abrands%3AQURVII%3Abrands%3AMISS%2BCHASE%3Abrands%3ADOLCE%2BCRUDO%3Abrands%3ASERA%3Abrands%3AKIBO%3Abrands%3AMARIE%2BCLAIRE';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hf8/h39/32015951626270/menswear_online-exclusive-4-widget-web_2009.jpg" alt="Image 3" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ARIGO%3Abrands%3AHANGUP%3Abrands%3ATISTABENE%3Abrands%3ASANWARA%3Abrands%3ARODAMO%3Abrands%3ARIAG%3Abrands%3AMACMERISE&text=&startRange=&endRange=#';">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h9b/h8f/32015952052254/Footwear_online-exclusive-4-widget-web_0930.jpg" alt="Image 4" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/men-footwear/c-A1030?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AASICS%3Abrands%3ABUCKAROO%3Abrands%3AFOUR%2BSTAR%2BTRUCK%2BSALES%3Abrands%3ABIG%2BFOX%3Abrands%3AGRIFFIN%3Abrands%3AMR.WONKER%3Abrands%3AWOAKERS';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h58/h96/32015952248862/Bags-%26-Accessories_online-exclusive-4-widget-web_4110.jpg" alt="Image 5" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-bags-wallets/c-A2025?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AYELLOE%3Abrands%3AKLEIO%3Abrands%3APOLICE%3Abrands%3AVIVINKA%3Abrands%3ASTROPCARRY%3Abrands%3AMIRAGGIO%3Abrands%3AHAUTE%2BSAUCE';">
-
-
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h69/h99/32015952314398/Jewellery_online-exclusive-4-widget-web_5090.jpg" alt="Image 6" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-jewellery-fashion-semi-precious/c-A209510?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AABDESIGNS%3Abrands%3AJEWELZ%3Abrands%3ASOHI%3Abrands%3AVIRAASI%3Abrands%3ARUBY%2BRAANG%3Abrands%3AZAVYA&text=&startRange=&endRange=#';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h17/h9a/32015952379934/Beauty_online-exclusive-4-widget-web_7992.jpg" alt="Image 7" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/beauty-fragrance-for-women/c-B1070?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ASWISS%2BARABIAN%3Abrands%3AChemist%2BAt%2BPlay%3Abrands%3AAffetto%3Abrands%3ALA%2BFRENCH%3Abrands%3AMOCEMSA%3Abrands%3ASAWALEF';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h28/h9d/32015952445470/Home_online-exclusive-4-widget-web_8109.jpg" alt="Image 8" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/homeware-decor/c-A8070?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AECRAFTINDIA%3Abrands%3ADECORTWIST%3Abrands%3AGOLDEN%2BPEACOCK%3Abrands%3ARANDOM%3Abrands%3AEXCLUSIVELANE%3Abrands%3AMAGNET%3Abrands%3AHOUSE%2BTHIS';">
-
-  </div>
-
-
-</div>
-
-
-
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/hf3/h11/32018833113118/strips-web-Star-Studded-Style_930.jpg" alt="">
-</div>
-
-
-
-
-
-
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h72/hb3/32097849770014/levis-web_a1.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALEVIS&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h8e/h49/32097850163230/Only-web_a6.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AONLY&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h25/he8/32206943518750/Force-IX-web_383839mwo.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AFORCE%2BIX&text=&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h1a/h6b/32018840715294/strips-web-Fresh-Spring-Essentials_609.jpg" alt="">
-</div>
-
-
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h14/h6e/32242150604830/Oasis-Style-web--western-wear-fresh-spring-2024-03-012.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/c-WomenWesternWear';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h51/32256062423070/pvt-label-web_aq1-.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=spring_summer_24%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AAll&startRange=&endRange=';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hd3/h71/32242150735902/Ethnic-Elegance-web--indianwear-new-frsh-spring-2024-03-12.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/c-WomenIndianWear';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h4e/hbf/32018836783134/strips-web-Summer-Hit-Brands_649.jpg" alt="">
-</div>
-
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h3a/h9e/32097833549854/Static-Web-police-%2C-diesel_al2.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/search/?sort=relevance&q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3APOLICE%3Abrands%3ADIESEL&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h08/ha8/32097833287710/Static-Web-tommy%2C-keneth-cole_n3.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/search/?q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3ATOMMY%2BHILFIGER%3Abrands%3AKENNETH%2BCOLE&text=wrist+watch&startRange=&endRange=&brandPageId=&linkText=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h69/h97/32097833746462/Static-Web-timex%2C-espirit_c3.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/search/?q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3ATIMEX%3Abrands%3AESPRIT&text=wrist+watch&startRange=&endRange=&brandPageId=&linkText=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-<div class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2">
-  <div class="flex flex-wrap ">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h71/h8d/32097852260382/Coverstory-web_b2.jpg" alt="Image 1" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ACOVERSTORY%3Abrands%3AVERO%2BMODA&startRange=&endRange=#';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hab/h4d/32206962524190/Allen-Solly-web_48393038vae.jpg" alt="Image 2" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AALLEN%2BSOLLY%3Abrands%3AVAN%2BHEUSEN&text=&startRange=&endRange=#';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h2e/h42/32097856651294/Latin-Quarters-%26-Zink-London-web_j34.jpg" alt="Image 3" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALATIN%2BQUARTERS%3Abrands%3AZINK%2BLONDON&text=&startRange=&endRange=#';">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h67/h97/32097857044510/Kraus-web_b6.jpg" alt="Image 4" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AONLY%3Abrands%3AKRAUS&text=&startRange=&endRange=#';">
-
-  </div>
-
-
-</div>
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h7f/hda/32201894494238/Static-Web-levis%2C-pepe-jeans_8330939how.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALEVIS%3Abrands%3APEPE&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hff/h50/32163250012190/allen-solly%2C-uspa_Static-Web_0011238jqp.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AALLEN%2BSOLLY%3Abrands%3AU.S.%2BPOLO%2BASSN.%2BDENIM%3Abrands%3AU.S.%2BPOLO%2BASSN.&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h5e/he7/32201894821918/Static-Web-mufti%2C-flying-machine_78900kio.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AMUFTI%3Abrands%3AFLYING%2BMACHINE&text=&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-
-
-<div class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2">
-  <div class="flex flex-wrap ">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hda/h46/32206962327582/Global-desi-web_7392038ind.jpg" alt="Image 1" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=categoryRelevance&q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AINDYA%3Abrands%3AGLOBAL%2BDESI&startRange=&endRange=';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/hce/hb9/32113317412894/Aurelia-%26-Libas-web_260224f.jpg" alt="Image 2" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AAURELIA%3Abrands%3ALIBAS&startRange=&endRange=#';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h13/h67/32256051019806/Lakshita-4-widget-web_130324d.jpg" alt="Image 3" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ANEERUS%3Abrands%3ALAKSHITA&startRange=&endRange=&show=Page#';">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h9a/h4a/32206962458654/Imara-web_9298338brw.jpg" alt="Image 4" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AIMARA%3Abrands%3ATRUE%2BBROWNS&startRange=&endRange=#';">
-
-  </div>
-
-
-</div>
-
-
-
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h1a/ha5/32113320427550/Static-Web-catwalk%2C-inc-5_260224ff.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AINC%2B5%3Abrands%3ACATWALK&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hd9/ha8/32113320558622/Static-Web-lemon-pepper%2C-fratini_260224f.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALEMON%2B%2526%2BPEPPER%3Abrands%3AFRATINI&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h49/hae/32201895870494/Static-Web-lee-cooper%2C-louis-phillipe_839383qxo.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALOUIS%2BPHILIPPE%3Abrands%3ALEE%2BCOOPER&text=&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/hb0/h5e/31980169756702/Fresh-off-the-Rack_strips-web_0209.jpg" alt="">
-</div>                  
-
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h1c/32168391540766/Dockers-X-SS_1840x500_2_06302938hwi.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/dockers?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ADOCKERS&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hc7/h7e/32156407824414/Royal-Enfield-web%20%286%29--2024-03-02-new-arrivals.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/royal-enfield?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AROYAL%2BENFIELD%3Al3category%3ARectangle%3Al3category%3AFrames%2B%2526%2BContact%2BLenses&startRange=&endRange=&show=Page#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h7c/h3e/32163256631326/Captain-America-web%2004-3-2023eoe.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/opium?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AOPIUM&startRange=&endRange=';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h29/hdd/32018835931166/strips-web-Beauty-Beyond-Borders_720.jpg" alt="">
-</div>                  
-                         
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hd9/h55/32156386197534/Prada_Web-------new-creative-2024-03--01--march.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/prada?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3APRADA&startRange=&endRange=&show=Page#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h75/h03/32156385640478/Ralph%20lauren_Web-------new-creative-2024-03--01--march.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/Ralph%20Lauren?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ARALPH%2BLAUREN&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h7c/h17/32156385083422/Azzaro%20_Web----new-creative-2024-03--01--march.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/azzaro?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AAZZARO%3Al1category%3ABeauty&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h59/hd6/32018835734558/strips-web-Your-Everyday-Glam-Sorted%21_792.jpg" alt="">
-</div>   
-
-
-
-
-<div class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2">
-  <div class="flex flex-wrap ">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h2b/h77/32206949253150/lakme%20faces%20canada%20%20Beauty%204%20widget%20Web_802208alo.jpg" alt="Image 1" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/beauty-make-up/c-B1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALAKME%3Abrands%3AFACES&text=&startRange=&endRange=';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h57/h06/32141201604638/Arcelia%20Mamaearth%20beauty%204%20widget%20Web---20240229--.jpg" alt="Image 2" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/beauty-skincare/c-B1020?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AARCELIA%3Abrands%3AMAMAEARTH&text=&startRange=&endRange=#';">
-
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h96/h05/32141201670174/loreal%20mayblelline%20beauty%204%20widget%20Web----20240229--.jpg" alt="Image 3" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/beauty-make-up/c-B1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALOREAL%3Abrands%3AMAYBELLINE&text=&startRange=&endRange=#';">
-    <img src="https://sslimages.shoppersstop.com/sys-master/root/h2d/h74/32206949318686/Minimalist%20%26%20Dot%20%26%20Key%20%20Beauty%204%20widget%20Web_390qpz.jpg" alt="Image 4" class="w-1/4 p-5 cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=Minimalist+%26+Dot+%26+Key%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AAll%3Abrands%3AMINIMALIST%3Abrands%3ADOT%2B%2526%2BKEY&startRange=&endRange=&show=Page';">
-
-  </div>
-
-
-</div>
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h8a/hcc/32018835472414/strips-web-Spring-2024-Fashion-is-in-Full-Bloom%21_572.jpg" alt="">
-</div>  
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h5d/h6d/32206949515294/Artistic-Florals-web--2024--03--08--new--womenppage.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-artistic-play/c-ArtisticPlay';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h1f/h78/32094741430302/print-play_trends-web----2024--02--22-new.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-print-play/c-PrintPlay';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hde/h7b/32094741561374/peppy-colors_trends-web----2024--02--22-new.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-peppy-colours/c-PeppyColours';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-
-
-<div class="w-9/12 flex justify-between items-center align-middle m-auto pt-11 pb-7 overflow-hidden">
-<img src="https://sslimages.shoppersstop.com/sys-master/root/hee/h15/32063098454046/Trends-of-the-season-mlt-clk-web_z1.jpg" class="pl-20 cursor-pointer " onclick="window.location.href='https://www.shoppersstop.com/virtual-category-timeless-indigo/c-TimelessIndigo';" alt="">
-
-</div>
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/hba/hc5/32018835275806/strips-web-Dapper-Up_402.jpg" alt="">
-</div>  
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h1b/had/32097828831262/structured-fabric_trends-web--2024---02---222--new-hp.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-structured_fabric/c-Structured_Fabric';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h4c/h55/32156397994014/effortless-linen-web--2024--03--01--new-mens-trends.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/virtual-category-effortless-linens/c-Effortless%20Linens';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/hf4/h58/32201888137246/T-shirts-web--2024--03--08--new-revise-oversize.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/c-Oversized%20T-shirts';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-
-<div class="w-9/12 flex justify-between items-center align-middle m-auto pt-11 pb-7 overflow-hidden">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h64/h40/32141190922270/Trends-of-the-Season-web_290224f.jpg" class="pl-20 cursor-pointer " onclick="window.location.href='https://www.shoppersstop.com/virtual-category-short-kurta-men/c-Short_Kurta_Men';" alt="">
-  
-  </div>
-
-  <div class="flex justify-center text-4xl italic py-11 "> <p>Top Selling Products</p></div>
-    
-  
-     
-  <div class="flex justify-center">
-   <div class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12 " style="scrollbar-width: none;">
-     <div class="flex gap-x-2">
-      
-       <div class="border cursor-pointer  " onclick="window.location.href='https://www.shoppersstop.com/p-S23DRSGRACE/colorChange/S23DRSGRACE_OFF_WHITE';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h76/h18/30183807221790/S23DRSGRACE_OFF_WHITE.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Stylum</h3>
-         <h4 class="text-gray-500 pl-4 pr-2">Women's Printed Rayon Flared Ethnic Dress</h4>
-         <p class="text-black font-semibold py-8 pl-4 ">₹791</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-MMYSHT328PSHT3/colorChange/MMYSHT328PSHT3_GREEN';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h77/hcd/31533972553758/MMYSHT328PSHT3_GREEN.jpg_136Wx204H"  class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Moomaya</h3>
-         <h4 class="text-gray-500 pl-4">Floral V-Neck Georgette Women Casual Wear</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹810</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-AW23KSSE53F/colorChange/AW23KSSE53F_PURPLE';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/hbe/h35/31182441414686/AW23KSSE53F_PURPLE.jpg_136Wx204H"  class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Kashish</h3>
-         <h4 class="text-gray-500 pl-4">Embroidered Vcose Blend Round Neck Kurta</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹1499</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-AW23KSSE72F/colorChange/AW23KSSE72F_LILAC';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h7a/h4e/31131933540382/AW23KSSE72F_LILAC.jpg_136Wx204H"  class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Kashish</h3>
-         <h4 class="text-gray-500 pl-4">Embrodered  Full Length Vcose Blend Women</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹2999</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-14085GREY/colorChange/14085GREY_GREY';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h8f/h1a/28971469963294/14085GREY_GREY.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Qurvii</h3>
-         <h4 class="text-gray-500 pl-4">Solid Fleece Collar Neck Women Long Jacket</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹1447</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-S22INITN03956/colorChange/S22INITN03956_PINK';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/ha8/h35/29894009683998/S22INITN03956_PINK.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Indya</h3>
-         <h4 class="text-gray-500 pl-4">Textured Georggette V Neck Women's Festive</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹1100</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-206262388/colorChange/206262388_MAROON';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/ha8/hcc/14596995350558/206262388_9612.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Indya</h3>
-         <h4 class="text-gray-500 pl-4">Maroon Embroidered Long V-Shrug Women' s </h4>
-         <p class="text-black font-semibold py-8 pl-4">₹1350</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-
-
-
-
-
-       
-     </div>
-   </div>
- </div>
-
-
- <div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/he0/h62/32018834489374/strips-web-Insider-Affair_989.jpg" alt="">
-</div>  
-
-
-
-
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h0c/hc2/32075028693022/Innerwear%20Essentials%20Web%20Bra_2278.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ATRIUMPH%3Abrands%3AENAMOR&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h26/h80/32113322655774/Briefs%20Innerwear%20Essentials%20Web_283939.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AAMANTE%3Abrands%3AJOCKEY&text=&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/he5/h83/32113322524702/Shapewear%20Innerwear%20Essentials%20Web_49300.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AWACOAL%3Abrands%3AVERO%2BMODA%2BINTIMATES&text=&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
-
-
-
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/hee/hce/30796216369182/FC-Main-Strip-Banner-Web_aw-23.jpg" class="cursor-pointer" onclick="window.location.href='https://www.shoppersstop.com/firstCitizenNonMember';" alt="">
-</div>  
-
-
-<div class="flex justify-center text-4xl italic py-11 "> <p>NARS New Collection</p></div>
-    
-  
-     
-  <div class="flex justify-center">
-   <div class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12 " style="scrollbar-width: none;">
-     <div class="flex gap-x-2">
-      
-       <div class="border cursor-pointer  " onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45015017SS/colorChange/A23NARS45015017SS_COPACABANA';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/hc9/h37/31143867580446/A23NARS45015017SS_COPACABANA.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4 pr-2">The Multiple Stick</h4>
-         <p class="text-black font-semibold py-8 pl-4 ">₹3800</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51002965SS/colorChange/A23NARS51002965SS_MEDIUM_DEEP';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h64/h7a/31144197750814/A23NARS51002965SS_MEDIUM_DEEP.jpg_136Wx204H"  class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4">Radiant Color Corrector</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹2800</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51003979SS/colorChange/A23NARS51003979SS_ZAMBIE';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h2d/h4d/31143939014686/A23NARS51003979SS_DEAUVILLE.jpg_136Wx204H"  class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4">Soft Matte Foundation</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹3750</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45012757SS/colorChange/A23NARS45012757SS_AFFOGATO';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/hb5/h89/31144132149278/A23NARS45012757SS_TRUFFLE.jpg_136Wx204H"  class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4">Soft Matte Concealer</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹3000</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-S24NARS51139814SS/colorChange/S24NARS51139814SS_AMERICAN_WOMAN_112';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h3d/haf/31880611364894/S24NARS51139814SS_WALKYRIE_180.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4">Powermatte Lip Pencil</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹2700</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45027867SS/colorChange/A23NARS45027867SS_WALK_THIS_WAY';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/h31/h69/31143902314526/A23NARS45027867SS_SAVE_THE_QUEEN.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4">Powermatte Lip Pigment</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹2800</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-       <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51132068SS/colorChange/A23NARS51132068SS_WANDERLUST';">
-         <img src="https://sslimages.shoppersstop.com/sys-master/images/hc8/h3b/31282953912350/A23NARS51132068SS_ORGASM.jpg_136Wx204H" class="object-cover w-full  " >
-         <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-         <h4 class="text-gray-500 pl-4">Afterglow Liquid Blush</h4>
-         <p class="text-black font-semibold py-8 pl-4">₹3300</p>
-         <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-       </div>
-
-
-
-
-
-       
-     </div>
-   </div>
- </div>
-
-
-
- <div class="flex justify-center text-4xl italic py-11 "> <p>Handpicked For You</p></div>
-    
-  
-     
- <div class="flex justify-center">
-  <div class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12 " style="scrollbar-width: none;">
-    <div class="flex gap-x-2">
-     
-      <div class="border cursor-pointer  " onclick="window.location.href='https://www.shoppersstop.com/p-S23KPD1048/colorChange/S23KPD1048_MAUVE';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/h43/h1d/30097871831070/S23KPD1048_MAUVE.jpg_136Wx204H" class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Myshka</h3>
-        <h4 class="text-gray-500 pl-4 pr-2">Printed Silk Blend Regular</h4>
-        <p class="text-black font-semibold py-8 pl-4 ">₹1301</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-      </div>
-      
-      <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51002965SS/colorChange/A23NARS51002965SS_MEDIUM_DEEP';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/h64/h7a/31144197750814/A23NARS51002965SS_MEDIUM_DEEP.jpg_136Wx204H"  class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-        <h4 class="text-gray-500 pl-4">Radiant Color Corrector</h4>
-        <p class="text-black font-semibold py-8 pl-4">₹2800</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-      </div>
-      <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51003979SS/colorChange/A23NARS51003979SS_ZAMBIE';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/h2d/h4d/31143939014686/A23NARS51003979SS_DEAUVILLE.jpg_136Wx204H"  class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-        <h4 class="text-gray-500 pl-4">Soft Matte Foundation</h4>
-        <p class="text-black font-semibold py-8 pl-4">₹3750</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-      </div>
-      <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45012757SS/colorChange/A23NARS45012757SS_AFFOGATO';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/hb5/h89/31144132149278/A23NARS45012757SS_TRUFFLE.jpg_136Wx204H"  class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-        <h4 class="text-gray-500 pl-4">Soft Matte Concealer</h4>
-        <p class="text-black font-semibold py-8 pl-4">₹3000</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-      </div>
-      <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-S24NARS51139814SS/colorChange/S24NARS51139814SS_AMERICAN_WOMAN_112';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/h3d/haf/31880611364894/S24NARS51139814SS_WALKYRIE_180.jpg_136Wx204H" class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-        <h4 class="text-gray-500 pl-4">Powermatte Lip Pencil</h4>
-        <p class="text-black font-semibold py-8 pl-4">₹2700</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-      </div>
-      <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45027867SS/colorChange/A23NARS45027867SS_WALK_THIS_WAY';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/h31/h69/31143902314526/A23NARS45027867SS_SAVE_THE_QUEEN.jpg_136Wx204H" class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-        <h4 class="text-gray-500 pl-4">Powermatte Lip Pigment</h4>
-        <p class="text-black font-semibold py-8 pl-4">₹2800</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
-      </div>
-      <div class="border cursor-pointer "onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51132068SS/colorChange/A23NARS51132068SS_WANDERLUST';">
-        <img src="https://sslimages.shoppersstop.com/sys-master/images/hc8/h3b/31282953912350/A23NARS51132068SS_ORGASM.jpg_136Wx204H" class="object-cover w-full  " >
-        <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
-        <h4 class="text-gray-500 pl-4">Afterglow Liquid Blush</h4>
-        <p class="text-black font-semibold py-8 pl-4">₹3300</p>
-        <span class="underline underline-offset-4 font-bold cursor-pointer px-24">Add To Bag</span>
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-5 pb-1"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h5b/h67/32018840846366/strips-web-What_s-Trending-In_840.jpg"
+          alt=""
+        />
       </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h87/h3e/32262975979550/web.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?q=SpringSummer2024Collection%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3AWomen%3Al1category%3ABOYS%2B%2526%2BLeggings%3Al3category%3AT-Shirts%2B%2526%2BPolos%3Al3category%3ATopwear&text=SpringSummer2024Collection';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h02/hee/32266429005854/web_140324f.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?q=SpringSummer2024Collection%3AtopRated%3AinStockFlag%3Atrue%3Al3category%3AEthnic%2BSets%3Al3category%3AEthnic%2BDresses%3Al3category%3AKurtas%252C%2Bkurtis%2B%2526%2Btops%3Al3category%3ASandals%2B%2526%2BFloaters';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/ha0/ha9/32256045711390/accessories-web_Accessories-Page_13-03-2024.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/Accessories_2024';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h65/h49/32256038338590/1840x180_Holi-Fest-13-03-2024.jpg"
+          alt=""
+        />
+      </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hd5/hcd/32262961233950/Static-Web-Denims_Holi-2024.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?q=%3AtopRated%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3ABOYS%3Al1category%3AWomen%3Al1category%3AGIRLS%3Al3category%3AJeans%3Al3category%3AJeans%2B%2526%2BLeggings';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h46/hc3/32262961561630/Static-Web-T-shirt_Holi-14-03-2024.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AMen%3Al1category%3ABOYS%3Al1category%3AWomen%3Al1category%3AGIRLS%3Al4category%3ATops%2B%2526%2BTees%3AswatchColors%3Awhite%3Al4category%3AT-Shirts';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hd6/h60/32262962315294/Static-Web-Sunglasses_Holi-14-03-2024.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/homeware-kitchen-bar-drinkware/c-A802050?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/hc7/h80/32266438246430/Home-Refresh-web_173029re.jpg"
+          alt=""
+        />
+      </div>
 
-      
-    </div>
-  </div>
-</div>
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h28/h6e/32262970081310/Dining-web_18309diw.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/homeware-dining/c-A8025';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h32/h16/32262971818014/Living-web_7392ari.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/homeware-home-furnishing/c-A8040';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h7e/h6b/32262972211230/Bedding-web_12309bed.jpg"
+            class="cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/homeware-bedding/c-A8010';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h91/hb8/32018836979742/strips-web-Online-Exclusive_893.jpg"
+          alt=""
+        />
+      </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <div class="flex flex-wrap">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hf2/h2b/32015947137054/Indian-Wear_online-exclusive-4-widget-web_0289.jpg"
+            alt="Image 1"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AJUNIPER%3Abrands%3AMYSHKA%3Abrands%3AJANASYA%3Abrands%3ASTYLUM%3Abrands%3AZIYAA%3Abrands%3ASCAKHI%3Abrands%3AHOUSE%2BOF%2BBEGUM';"
+          />
 
-<div class="w-9/12 flex justify-center items-center align-middle m-auto  pt-6 pb-2 ">
-  <img src="https://sslimages.shoppersstop.com/sys-master/root/h16/h63/32018832883742/strips-web-Red-Carpet-Magic_981.jpg" class="cursor-pointer" >
-</div>  
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hdf/h2b/32015950774302/Western_online-exclusive-4-widget-web_9023.jpg"
+            alt="Image 2"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ARARE%3Abrands%3AQURVII%3Abrands%3AMISS%2BCHASE%3Abrands%3ADOLCE%2BCRUDO%3Abrands%3ASERA%3Abrands%3AKIBO%3Abrands%3AMARIE%2BCLAIRE';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hf8/h39/32015951626270/menswear_online-exclusive-4-widget-web_2009.jpg"
+            alt="Image 3"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ARIGO%3Abrands%3AHANGUP%3Abrands%3ATISTABENE%3Abrands%3ASANWARA%3Abrands%3ARODAMO%3Abrands%3ARIAG%3Abrands%3AMACMERISE&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h9b/h8f/32015952052254/Footwear_online-exclusive-4-widget-web_0930.jpg"
+            alt="Image 4"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/men-footwear/c-A1030?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AASICS%3Abrands%3ABUCKAROO%3Abrands%3AFOUR%2BSTAR%2BTRUCK%2BSALES%3Abrands%3ABIG%2BFOX%3Abrands%3AGRIFFIN%3Abrands%3AMR.WONKER%3Abrands%3AWOAKERS';"
+          />
 
-<div
-class="w-9/12  flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
->
-<i
-  class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-></i>
-<div class="flex animate-scrolling-images-2 ">
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h25/h38/32097851867166/Giva-web_A6.jpg"
-    class="cursor-pointer  object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/giva?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AGIVA&startRange=&endRange=#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h35/h3b/32097851932702/Zouk-web_A8.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/zouk?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AZOUK&startRange=&endRange=&show=Page#';"
-  />
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h86/32097852063774/Wonderchef-web_b1.jpg"
-    class="cursor-pointer object-cover w-full h-full"
-    onclick="window.location.href='https://www.shoppersstop.com/brand/Wonderchef?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AWONDERCHEF&startRange=&endRange=#';"
-  />
-</div>
-<i
-  class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-></i>
-</div>  
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h58/h96/32015952248862/Bags-%26-Accessories_online-exclusive-4-widget-web_4110.jpg"
+            alt="Image 5"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-bags-wallets/c-A2025?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AYELLOE%3Abrands%3AKLEIO%3Abrands%3APOLICE%3Abrands%3AVIVINKA%3Abrands%3ASTROPCARRY%3Abrands%3AMIRAGGIO%3Abrands%3AHAUTE%2BSAUCE';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h69/h99/32015952314398/Jewellery_online-exclusive-4-widget-web_5090.jpg"
+            alt="Image 6"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-jewellery-fashion-semi-precious/c-A209510?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AABDESIGNS%3Abrands%3AJEWELZ%3Abrands%3ASOHI%3Abrands%3AVIRAASI%3Abrands%3ARUBY%2BRAANG%3Abrands%3AZAVYA&text=&startRange=&endRange=#';"
+          />
 
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h17/h9a/32015952379934/Beauty_online-exclusive-4-widget-web_7992.jpg"
+            alt="Image 7"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/beauty-fragrance-for-women/c-B1070?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ASWISS%2BARABIAN%3Abrands%3AChemist%2BAt%2BPlay%3Abrands%3AAffetto%3Abrands%3ALA%2BFRENCH%3Abrands%3AMOCEMSA%3Abrands%3ASAWALEF';"
+          />
 
-<div
-class="w-9/12   flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
->
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h28/h9d/32015952445470/Home_online-exclusive-4-widget-web_8109.jpg"
+            alt="Image 8"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/homeware-decor/c-A8070?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AECRAFTINDIA%3Abrands%3ADECORTWIST%3Abrands%3AGOLDEN%2BPEACOCK%3Abrands%3ARANDOM%3Abrands%3AEXCLUSIVELANE%3Abrands%3AMAGNET%3Abrands%3AHOUSE%2BTHIS';"
+          />
+        </div>
+      </div>
 
-<div class="flex  ">
- 
-  <img
-    src="https://sslimages.shoppersstop.com/sys-master/root/h00/h14/30814204100638/personal-shopper-web---hp-aw-2023-09-06-format.jpg"
-    class="cursor-pointer object-cover w-full h-full "
-    onclick="window.location.href='https://www.shoppersstop.com//lp_personalshoppers';"
-  />
-</div>
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/hf3/h11/32018833113118/strips-web-Star-Studded-Style_930.jpg"
+          alt=""
+        />
+      </div>
 
-</div>  
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h72/hb3/32097849770014/levis-web_a1.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALEVIS&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h8e/h49/32097850163230/Only-web_a6.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AONLY&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h25/he8/32206943518750/Force-IX-web_383839mwo.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AFORCE%2BIX&text=&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
 
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h1a/h6b/32018840715294/strips-web-Fresh-Spring-Essentials_609.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h14/h6e/32242150604830/Oasis-Style-web--western-wear-fresh-spring-2024-03-012.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/c-WomenWesternWear';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h51/32256062423070/pvt-label-web_aq1-.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=spring_summer_24%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AAll&startRange=&endRange=';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hd3/h71/32242150735902/Ethnic-Elegance-web--indianwear-new-frsh-spring-2024-03-12.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/c-WomenIndianWear';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h4e/hbf/32018836783134/strips-web-Summer-Hit-Brands_649.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h3a/h9e/32097833549854/Static-Web-police-%2C-diesel_al2.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=relevance&q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3APOLICE%3Abrands%3ADIESEL&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h08/ha8/32097833287710/Static-Web-tommy%2C-keneth-cole_n3.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3ATOMMY%2BHILFIGER%3Abrands%3AKENNETH%2BCOLE&text=wrist+watch&startRange=&endRange=&brandPageId=&linkText=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h69/h97/32097833746462/Static-Web-timex%2C-espirit_c3.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3ATIMEX%3Abrands%3AESPRIT&text=wrist+watch&startRange=&endRange=&brandPageId=&linkText=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <div class="flex flex-wrap">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h71/h8d/32097852260382/Coverstory-web_b2.jpg"
+            alt="Image 1"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ACOVERSTORY%3Abrands%3AVERO%2BMODA&startRange=&endRange=#';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hab/h4d/32206962524190/Allen-Solly-web_48393038vae.jpg"
+            alt="Image 2"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AALLEN%2BSOLLY%3Abrands%3AVAN%2BHEUSEN&text=&startRange=&endRange=#';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h2e/h42/32097856651294/Latin-Quarters-%26-Zink-London-web_j34.jpg"
+            alt="Image 3"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALATIN%2BQUARTERS%3Abrands%3AZINK%2BLONDON&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h67/h97/32097857044510/Kraus-web_b6.jpg"
+            alt="Image 4"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AONLY%3Abrands%3AKRAUS&text=&startRange=&endRange=#';"
+          />
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h7f/hda/32201894494238/Static-Web-levis%2C-pepe-jeans_8330939how.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALEVIS%3Abrands%3APEPE&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hff/h50/32163250012190/allen-solly%2C-uspa_Static-Web_0011238jqp.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AALLEN%2BSOLLY%3Abrands%3AU.S.%2BPOLO%2BASSN.%2BDENIM%3Abrands%3AU.S.%2BPOLO%2BASSN.&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h5e/he7/32201894821918/Static-Web-mufti%2C-flying-machine_78900kio.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AMUFTI%3Abrands%3AFLYING%2BMACHINE&text=&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <div class="flex flex-wrap">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hda/h46/32206962327582/Global-desi-web_7392038ind.jpg"
+            alt="Image 1"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=categoryRelevance&q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AINDYA%3Abrands%3AGLOBAL%2BDESI&startRange=&endRange=';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hce/hb9/32113317412894/Aurelia-%26-Libas-web_260224f.jpg"
+            alt="Image 2"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AAURELIA%3Abrands%3ALIBAS&startRange=&endRange=#';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h13/h67/32256051019806/Lakshita-4-widget-web_130324d.jpg"
+            alt="Image 3"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ANEERUS%3Abrands%3ALAKSHITA&startRange=&endRange=&show=Page#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h9a/h4a/32206962458654/Imara-web_9298338brw.jpg"
+            alt="Image 4"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/women-indianwear/c-A2010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AIMARA%3Abrands%3ATRUE%2BBROWNS&startRange=&endRange=#';"
+          />
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h1a/ha5/32113320427550/Static-Web-catwalk%2C-inc-5_260224ff.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AINC%2B5%3Abrands%3ACATWALK&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hd9/ha8/32113320558622/Static-Web-lemon-pepper%2C-fratini_260224f.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALEMON%2B%2526%2BPEPPER%3Abrands%3AFRATINI&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h49/hae/32201895870494/Static-Web-lee-cooper%2C-louis-phillipe_839383qxo.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALOUIS%2BPHILIPPE%3Abrands%3ALEE%2BCOOPER&text=&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/hb0/h5e/31980169756702/Fresh-off-the-Rack_strips-web_0209.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h1c/32168391540766/Dockers-X-SS_1840x500_2_06302938hwi.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/dockers?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ADOCKERS&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hc7/h7e/32156407824414/Royal-Enfield-web%20%286%29--2024-03-02-new-arrivals.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/royal-enfield?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AROYAL%2BENFIELD%3Al3category%3ARectangle%3Al3category%3AFrames%2B%2526%2BContact%2BLenses&startRange=&endRange=&show=Page#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h7c/h3e/32163256631326/Captain-America-web%2004-3-2023eoe.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/opium?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AOPIUM&startRange=&endRange=';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h29/hdd/32018835931166/strips-web-Beauty-Beyond-Borders_720.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hd9/h55/32156386197534/Prada_Web-------new-creative-2024-03--01--march.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/prada?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3APRADA&startRange=&endRange=&show=Page#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h75/h03/32156385640478/Ralph%20lauren_Web-------new-creative-2024-03--01--march.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/Ralph%20Lauren?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ARALPH%2BLAUREN&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h7c/h17/32156385083422/Azzaro%20_Web----new-creative-2024-03--01--march.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/azzaro?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AAZZARO%3Al1category%3ABeauty&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h59/hd6/32018835734558/strips-web-Your-Everyday-Glam-Sorted%21_792.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <div class="flex flex-wrap">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h2b/h77/32206949253150/lakme%20faces%20canada%20%20Beauty%204%20widget%20Web_802208alo.jpg"
+            alt="Image 1"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/beauty-make-up/c-B1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALAKME%3Abrands%3AFACES&text=&startRange=&endRange=';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h57/h06/32141201604638/Arcelia%20Mamaearth%20beauty%204%20widget%20Web---20240229--.jpg"
+            alt="Image 2"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/beauty-skincare/c-B1020?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AARCELIA%3Abrands%3AMAMAEARTH&text=&startRange=&endRange=#';"
+          />
+
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h96/h05/32141201670174/loreal%20mayblelline%20beauty%204%20widget%20Web----20240229--.jpg"
+            alt="Image 3"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/beauty-make-up/c-B1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALOREAL%3Abrands%3AMAYBELLINE&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h2d/h74/32206949318686/Minimalist%20%26%20Dot%20%26%20Key%20%20Beauty%204%20widget%20Web_390qpz.jpg"
+            alt="Image 4"
+            class="w-1/4 p-5 cursor-pointer"
+            onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=Minimalist+%26+Dot+%26+Key%3Arelevance%3AinStockFlag%3Atrue%3Al1category%3AAll%3Abrands%3AMINIMALIST%3Abrands%3ADOT%2B%2526%2BKEY&startRange=&endRange=&show=Page';"
+          />
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h8a/hcc/32018835472414/strips-web-Spring-2024-Fashion-is-in-Full-Bloom%21_572.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h5d/h6d/32206949515294/Artistic-Florals-web--2024--03--08--new--womenppage.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-artistic-play/c-ArtisticPlay';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h1f/h78/32094741430302/print-play_trends-web----2024--02--22-new.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-print-play/c-PrintPlay';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hde/h7b/32094741561374/peppy-colors_trends-web----2024--02--22-new.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-peppy-colours/c-PeppyColours';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-between items-center align-middle m-auto pt-11 pb-7 overflow-hidden"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/hee/h15/32063098454046/Trends-of-the-season-mlt-clk-web_z1.jpg"
+          class="pl-20 cursor-pointer"
+          onclick="window.location.href='https://www.shoppersstop.com/virtual-category-timeless-indigo/c-TimelessIndigo';"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/hba/hc5/32018835275806/strips-web-Dapper-Up_402.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h1b/had/32097828831262/structured-fabric_trends-web--2024---02---222--new-hp.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-structured_fabric/c-Structured_Fabric';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h4c/h55/32156397994014/effortless-linen-web--2024--03--01--new-mens-trends.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/virtual-category-effortless-linens/c-Effortless%20Linens';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/hf4/h58/32201888137246/T-shirts-web--2024--03--08--new-revise-oversize.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/c-Oversized%20T-shirts';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-between items-center align-middle m-auto pt-11 pb-7 overflow-hidden"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h64/h40/32141190922270/Trends-of-the-Season-web_290224f.jpg"
+          class="pl-20 cursor-pointer"
+          onclick="window.location.href='https://www.shoppersstop.com/virtual-category-short-kurta-men/c-Short_Kurta_Men';"
+          alt=""
+        />
+      </div>
+
+      <div class="flex justify-center text-4xl italic py-11">
+        <p>Top Selling Products</p>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12"
+          style="scrollbar-width: none"
+        >
+          <div class="flex gap-x-2">
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S23DRSGRACE/colorChange/S23DRSGRACE_OFF_WHITE';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h76/h18/30183807221790/S23DRSGRACE_OFF_WHITE.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Stylum</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                Women's Printed Rayon Flared Ethnic Dress
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹791</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-MMYSHT328PSHT3/colorChange/MMYSHT328PSHT3_GREEN';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h77/hcd/31533972553758/MMYSHT328PSHT3_GREEN.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Moomaya</h3>
+              <h4 class="text-gray-500 pl-4">
+                Floral V-Neck Georgette Women Casual Wear
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹810</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-AW23KSSE53F/colorChange/AW23KSSE53F_PURPLE';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hbe/h35/31182441414686/AW23KSSE53F_PURPLE.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Kashish</h3>
+              <h4 class="text-gray-500 pl-4">
+                Embroidered Vcose Blend Round Neck Kurta
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹1499</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-AW23KSSE72F/colorChange/AW23KSSE72F_LILAC';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h7a/h4e/31131933540382/AW23KSSE72F_LILAC.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Kashish</h3>
+              <h4 class="text-gray-500 pl-4">
+                Embrodered Full Length Vcose Blend Women
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹2999</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-14085GREY/colorChange/14085GREY_GREY';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h8f/h1a/28971469963294/14085GREY_GREY.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Qurvii</h3>
+              <h4 class="text-gray-500 pl-4">
+                Solid Fleece Collar Neck Women Long Jacket
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹1447</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S22INITN03956/colorChange/S22INITN03956_PINK';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/ha8/h35/29894009683998/S22INITN03956_PINK.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Indya</h3>
+              <h4 class="text-gray-500 pl-4">
+                Textured Georggette V Neck Women's Festive
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹1100</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-206262388/colorChange/206262388_MAROON';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/ha8/hcc/14596995350558/206262388_9612.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Indya</h3>
+              <h4 class="text-gray-500 pl-4">
+                Maroon Embroidered Long V-Shrug Women' s
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹1350</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/he0/h62/32018834489374/strips-web-Insider-Affair_989.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h0c/hc2/32075028693022/Innerwear%20Essentials%20Web%20Bra_2278.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ATRIUMPH%3Abrands%3AENAMOR&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h26/h80/32113322655774/Briefs%20Innerwear%20Essentials%20Web_283939.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AAMANTE%3Abrands%3AJOCKEY&text=&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/he5/h83/32113322524702/Shapewear%20Innerwear%20Essentials%20Web_49300.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AWACOAL%3Abrands%3AVERO%2BMODA%2BINTIMATES&text=&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/hee/hce/30796216369182/FC-Main-Strip-Banner-Web_aw-23.jpg"
+          class="cursor-pointer"
+          onclick="window.location.href='https://www.shoppersstop.com/firstCitizenNonMember';"
+          alt=""
+        />
+      </div>
+
+      <div class="flex justify-center text-4xl italic py-11">
+        <p>NARS New Collection</p>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12"
+          style="scrollbar-width: none"
+        >
+          <div class="flex gap-x-2">
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45015017SS/colorChange/A23NARS45015017SS_COPACABANA';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hc9/h37/31143867580446/A23NARS45015017SS_COPACABANA.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">The Multiple Stick</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹3800</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51002965SS/colorChange/A23NARS51002965SS_MEDIUM_DEEP';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h64/h7a/31144197750814/A23NARS51002965SS_MEDIUM_DEEP.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4">Radiant Color Corrector</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹2800</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51003979SS/colorChange/A23NARS51003979SS_ZAMBIE';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h2d/h4d/31143939014686/A23NARS51003979SS_DEAUVILLE.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4">Soft Matte Foundation</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹3750</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45012757SS/colorChange/A23NARS45012757SS_AFFOGATO';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hb5/h89/31144132149278/A23NARS45012757SS_TRUFFLE.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4">Soft Matte Concealer</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹3000</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S24NARS51139814SS/colorChange/S24NARS51139814SS_AMERICAN_WOMAN_112';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h3d/haf/31880611364894/S24NARS51139814SS_WALKYRIE_180.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4">Powermatte Lip Pencil</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹2700</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS45027867SS/colorChange/A23NARS45027867SS_WALK_THIS_WAY';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h31/h69/31143902314526/A23NARS45027867SS_SAVE_THE_QUEEN.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4">Powermatte Lip Pigment</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹2800</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A23NARS51132068SS/colorChange/A23NARS51132068SS_WANDERLUST';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hc8/h3b/31282953912350/A23NARS51132068SS_ORGASM.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Nars</h3>
+              <h4 class="text-gray-500 pl-4">Afterglow Liquid Blush</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹3300</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center text-4xl italic py-11">
+        <p>Handpicked For You</p>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="overflow-hidden overflow-x-auto whitespace-nowrap w-9/12"
+          style="scrollbar-width: none"
+        >
+          <div class="flex gap-x-2">
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S23KPD1048/colorChange/S23KPD1048_MAUVE';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h43/h1d/30097871831070/S23KPD1048_MAUVE.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Myshka</h3>
+              <h4 class="text-gray-500 pl-4 pr-2">
+                Printed Silk Blend Regular
+              </h4>
+              <p class="text-black font-semibold py-8 pl-4">₹1301</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-WTT2608QM02_base/colorChange/WTT2608QM02_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h6e/hc2/28310774120478/WTT2608QM02_NoColour.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Titan</h3>
+              <h4 class="text-gray-500 pl-4">Womens 35 x 6.50 x 29 mm Raga</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹5995</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S8VER05071469OR_base/colorChange/S8VER05071469OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h31/h70/28616808431646/S8VER05071469OR_NoColour.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Versace</h3>
+              <h4 class="text-gray-500 pl-4">Crystal Noir Eau De Women</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹8600</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S23KPD1045/colorChange/S23KPD1045_MAUVE';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h19/h82/30098746900510/S23KPD1045_MAUVE.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Myshka</h3>
+              <h4 class="text-gray-500 pl-4">Embroidered Silk Blend Regular</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹987</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-A21GUC9382167OR_base/colorChange/A21GUC9382167OR_NoColour';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/haf/hcb/28623492546590/A21GUC9382167OR_NoColour.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Gucci</h3>
+              <h4 class="text-gray-500 pl-4">Guilty Eau de Parfum for Him</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹11500</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-14094BLACK/colorChange/14094BLACK_BLACK';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/h94/h06/28972591480862/14094BLACK_BLACK.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Qurvii</h3>
+              <h4 class="text-gray-500 pl-4">Solid Fleece Collar Neck</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹1171</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+            <div
+              class="border cursor-pointer"
+              onclick="window.location.href='https://www.shoppersstop.com/p-S22MY788/colorChange/S22MY788_PINK';"
+            >
+              <img
+                src="https://sslimages.shoppersstop.com/sys-master/images/hb9/h10/27403432853534/S22MY788_PINK.jpg_136Wx204H"
+                class="object-cover w-full"
+              />
+              <h3 class="text-lg mt-0.5 font-medium text-xl pl-4">Myshka</h3>
+              <h4 class="text-gray-500 pl-4">Printed Cotton Round Neck</h4>
+              <p class="text-black font-semibold py-8 pl-4">₹974</p>
+              <span
+                class="underline underline-offset-4 font-bold cursor-pointer px-24"
+                >Add To Bag</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
+      >
+        <img
+          src="https://sslimages.shoppersstop.com/sys-master/root/h16/h63/32018832883742/strips-web-Red-Carpet-Magic_981.jpg"
+          class="cursor-pointer"
+        />
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <i
+          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
+        ></i>
+        <div class="flex animate-scrolling-images-2">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h25/h38/32097851867166/Giva-web_A6.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/giva?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AGIVA&startRange=&endRange=#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h35/h3b/32097851932702/Zouk-web_A8.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/zouk?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AZOUK&startRange=&endRange=&show=Page#';"
+          />
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h86/32097852063774/Wonderchef-web_b1.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com/brand/Wonderchef?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AWONDERCHEF&startRange=&endRange=#';"
+          />
+        </div>
+        <i
+          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
+        ></i>
+      </div>
+
+      <div
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+      >
+        <div class="flex">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h00/h14/30814204100638/personal-shopper-web---hp-aw-2023-09-06-format.jpg"
+            class="cursor-pointer object-cover w-full h-full"
+            onclick="window.location.href='https://www.shoppersstop.com//lp_personalshoppers';"
+          />
+        </div>
+      </div>
     </main>
   </body>
 </html>
