@@ -21,6 +21,9 @@
         font-optical-sizing: auto;
         font-style: normal;
       }
+      header {
+        position: relative;
+      }
       .container-c {
         max-width: 82.2rem;
         height: 60vh;
@@ -38,6 +41,9 @@
         justify-content: space-around;
         align-items: center;
         /* padding: 0 6%; */
+        position: fixed;
+        width: 100%;
+        top: 0;
       }
       .empty-cart {
         color: black;
@@ -49,22 +55,25 @@
     </style>
   </head>
   <body>
-    <nav>
-      <div>
-        <a href="#" style="font-size: 20px; font-weight: 600">MY CART</a>
-      </div>
-      <div>
-        <a href=""><img src="assets brand/newLogo.svg" alt="" /></a>
-      </div>
-      <div style="font-size: x-large; display: flex">
-        <a href="#" style="margin: 0 25%"
-          ><i class="fa-regular fa-heart"></i
-        ></a>
-        <a href="#" style="margin: 0 25%"
-          ><i class="fa-regular fa-circle-user"></i
-        ></a>
-      </div>
-    </nav>
+    <header>
+      <nav>
+        <div>
+          <a href="#" style="font-size: 20px; font-weight: 600">MY CART</a>
+        </div>
+        <div>
+          <a href=""><img src="assets brand/newLogo.svg" alt="" /></a>
+        </div>
+        <div style="font-size: x-large; display: flex">
+          <a href="#" style="margin: 0 25%"
+            ><i class="fa-regular fa-heart"></i
+          ></a>
+          <a href="#" style="margin: 0 25%"
+            ><i class="fa-regular fa-circle-user"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
     <div class="container-c">
       <div class="empty-cart">
         <img src="empty cart pic.svg" alt="" />
@@ -73,7 +82,11 @@
           Fill your cart with the best of Shoppers Stop
         </p>
         <p>
-          <a href="#" style="color: black; font-weight: 700">Start Shopping</a>
+          <a
+            href="#"
+            style="color: black; font-weight: 700; text-decoration: underline"
+            >Start Shopping</a
+          >
         </p>
       </div>
     </div>
