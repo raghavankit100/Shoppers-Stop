@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a72892e0d8.js"
+      crossorigin="anonymous"
+    ></script>
     <style type="text/tailwindcss">
       @layer utilities {
         .content-auto {
@@ -92,6 +96,7 @@
     />
 
     <link rel="stylesheet" href="external-css.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -174,9 +179,11 @@
             id="search-icon-after-small-screen"
             class="fa-solid fa-magnifying-glass cursor-pointer"
           ></i>
-          <a href="#"> <i class="fa-regular fa-heart px-4"></i></a>
+          <a href="#">
+            <i id="heart-right" class="fa-regular fa-heart px-4"></i
+          ></a>
           <a href="https://www.shoppersstop.com/cart">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i id="bag-top-left" class="fa-solid fa-bag-shopping"></i>
           </a>
           <a href="#"
             ><i id="profile-icon-top-right" class="fa-regular fa-user pl-4"></i
@@ -328,11 +335,9 @@
       /></a>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h64/h70/32117147140126/ss-web_270224d.jpg"
@@ -350,12 +355,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
         <div class="flex animate-scrolling-images-2">
@@ -378,6 +381,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
         <img
@@ -388,6 +392,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pb-7 pt-4"
       >
         <img
@@ -398,11 +403,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h6e/hd2/32124878094366/Web_al123.jpg"
@@ -420,13 +423,11 @@
             onclick="window.location.href='https://www.shoppersstop.com/brand/lee?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3ALEE%3Al1category%3AWomen&startRange=&endRange=&show=Page#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
-        class="w-9/12 flex justify-center items-center align-middle m-auto pt-20"
+        class="w-9/12 flex justify-center items-center m-auto pt-20"
+        id="max-width-for-phones"
       >
         <img
           src="https://sslimages.shoppersstop.com/sys-master/root/hc3/hbc/32018844942366/strips-web-Top-Rated-Categories_920.jpg"
@@ -434,10 +435,8 @@
         />
       </div>
 
-      <div
-        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
-      >
-        <div class="flex flex-wrap">
+      <div class="w-9/12 m-auto pt-6">
+        <div class="flex-container-8">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h01/h84/32266433658910/lingerie-web_Hp-14-03-2024.jpg"
             alt="Image 1"
@@ -496,6 +495,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-5 pb-3"
       >
         <img
@@ -505,11 +505,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/hf5/h91/32163259219998/Versace_Desktop%20%281%29--new-offer-banner-2024-03-04.jpg"
@@ -527,9 +525,6 @@
             onclick="window.location.href='https://www.shoppersstop.com/search/?sort=topRated&q=giorgio+armani%3Arelevance%3AinStockFlag%3Atrue%3Abrands%3AARMANI%3Al1category%3ABeauty&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div class="flex justify-center text-4xl italic py-11">
@@ -667,6 +662,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-5 pb-3"
       >
         <img
@@ -676,11 +672,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 h-80 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h4d/he9/32097829814302/ss-selects-web-KASHISH-%26-STOP_w2.jpg"
@@ -698,12 +692,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/women-westernwear/c-A2060?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ASTOP%3Abrands%3ALIFE%3Abrands%3AALTLIFE%3Abrands%3AFRATINI%3Abrands%3AINSENSE&text=&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-5 pb-1"
       >
         <img
@@ -713,11 +705,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h87/h3e/32262975979550/web.jpg"
@@ -735,12 +725,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/Accessories_2024';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -750,11 +738,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/hd5/hcd/32262961233950/Static-Web-Denims_Holi-2024.jpg"
@@ -772,12 +758,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/homeware-kitchen-bar-drinkware/c-A802050?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -787,11 +771,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h28/h6e/32262970081310/Dining-web_18309diw.jpg"
@@ -809,12 +791,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/homeware-bedding/c-A8010';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -823,10 +803,8 @@
         />
       </div>
 
-      <div
-        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
-      >
-        <div class="flex flex-wrap">
+      <div class="w-9/12 m-auto pt-2">
+        <div class="flex-container-8">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/hf2/h2b/32015947137054/Indian-Wear_online-exclusive-4-widget-web_0289.jpg"
             alt="Image 1"
@@ -885,6 +863,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -894,11 +873,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h72/hb3/32097849770014/levis-web_a1.jpg"
@@ -916,12 +893,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AFORCE%2BIX&text=&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -931,11 +906,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h14/h6e/32242150604830/Oasis-Style-web--western-wear-fresh-spring-2024-03-012.jpg"
@@ -953,12 +926,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/c-WomenIndianWear';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -968,11 +939,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h3a/h9e/32097833549854/Static-Web-police-%2C-diesel_al2.jpg"
@@ -990,15 +959,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/search/?q=wrist+watch%3AtopRated%3AinStockFlag%3Atrue%3AcategoryName%3AWatches%3Abrands%3ATIMEX%3Abrands%3AESPRIT&text=wrist+watch&startRange=&endRange=&brandPageId=&linkText=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
-      <div
-        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
-      >
-        <div class="flex flex-wrap">
+      <div class="w-9/12 m-auto pt-2">
+        <div class="flex-container-8">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h71/h8d/32097852260382/Coverstory-web_b2.jpg"
             alt="Image 1"
@@ -1029,11 +993,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h7f/hda/32201894494238/Static-Web-levis%2C-pepe-jeans_8330939how.jpg"
@@ -1051,15 +1013,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/men-clothing/c-A1010?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AMUFTI%3Abrands%3AFLYING%2BMACHINE&text=&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
-      <div
-        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
-      >
-        <div class="flex flex-wrap">
+      <div class="w-9/12 m-auto pt-2">
+        <div class="flex-container-8">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/hda/h46/32206962327582/Global-desi-web_7392038ind.jpg"
             alt="Image 1"
@@ -1090,11 +1047,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h1a/ha5/32113320427550/Static-Web-catwalk%2C-inc-5_260224ff.jpg"
@@ -1112,12 +1067,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/virtual-category-mens-and-womens-footwear/c-Display_all_footwear?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3ALOUIS%2BPHILIPPE%3Abrands%3ALEE%2BCOOPER&text=&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1127,11 +1080,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/ha0/h1c/32168391540766/Dockers-X-SS_1840x500_2_06302938hwi.jpg"
@@ -1149,12 +1100,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/brand/opium?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AOPIUM&startRange=&endRange=';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1164,11 +1113,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/hd9/h55/32156386197534/Prada_Web-------new-creative-2024-03--01--march.jpg"
@@ -1186,12 +1133,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/brand/azzaro?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AAZZARO%3Al1category%3ABeauty&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1200,10 +1145,8 @@
         />
       </div>
 
-      <div
-        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
-      >
-        <div class="flex flex-wrap">
+      <div class="w-9/12 m-auto pt-2">
+        <div class="flex-container-8">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h2b/h77/32206949253150/lakme%20faces%20canada%20%20Beauty%204%20widget%20Web_802208alo.jpg"
             alt="Image 1"
@@ -1234,6 +1177,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1243,11 +1187,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h5d/h6d/32206949515294/Artistic-Florals-web--2024--03--08--new--womenppage.jpg"
@@ -1265,12 +1207,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/virtual-category-peppy-colours/c-PeppyColours';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="to-hide-in-smaller-screens"
         class="w-9/12 flex justify-between items-center align-middle m-auto pt-11 pb-7 overflow-hidden"
       >
         <img
@@ -1282,6 +1222,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1291,11 +1232,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-6"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h1b/had/32097828831262/structured-fabric_trends-web--2024---02---222--new-hp.jpg"
@@ -1313,12 +1252,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/c-Oversized%20T-shirts';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="to-hide-in-smaller-screens"
         class="w-9/12 flex justify-between items-center align-middle m-auto pt-11 pb-7 overflow-hidden"
       >
         <img
@@ -1471,6 +1408,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1480,11 +1418,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h0c/hc2/32075028693022/Innerwear%20Essentials%20Web%20Bra_2278.jpg"
@@ -1502,12 +1438,10 @@
             onclick="window.location.href='https://www.shoppersstop.com/women-lingerie-nightwear/c-A20110?q=%3AtopRated%3AinStockFlag%3Atrue%3Abrands%3AWACOAL%3Abrands%3AVERO%2BMODA%2BINTIMATES&text=&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1775,6 +1709,7 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle m-auto pt-6 pb-2"
       >
         <img
@@ -1784,11 +1719,9 @@
       </div>
 
       <div
+        id="max-width-for-phones"
         class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
       >
-        <i
-          class="fa-solid fa-arrow-left left-48 absolute z-10 text-3xl cursor-pointer"
-        ></i>
         <div class="flex animate-scrolling-images-2">
           <img
             src="https://sslimages.shoppersstop.com/sys-master/root/h25/h38/32097851867166/Giva-web_A6.jpg"
@@ -1806,13 +1739,11 @@
             onclick="window.location.href='https://www.shoppersstop.com/brand/Wonderchef?sort=topRated&q=%3AcategoryRelevance%3AinStockFlag%3Atrue%3Abrands%3AWONDERCHEF&startRange=&endRange=#';"
           />
         </div>
-        <i
-          class="fa-solid fa-arrow-right z-10 absolute right-48 text-3xl cursor-pointer"
-        ></i>
       </div>
 
       <div
-        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2"
+        id="max-width-for-phones"
+        class="w-9/12 flex justify-center items-center align-middle overflow-hidden m-auto pt-2 pb-2"
       >
         <div class="flex">
           <img
@@ -1823,5 +1754,7 @@
         </div>
       </div>
     </main>
+
+    <!-- footer area -->
   </body>
 </html>

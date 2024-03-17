@@ -40,6 +40,10 @@
   color: black;
   font-size: 12px;
 }
+.option-list h3 {
+  padding-right: 1.2rem;
+  padding-top: 0.3rem;
+}
 .option-list div {
   width: 80px;
   margin-right: 1px;
@@ -57,6 +61,34 @@ h3 {
 }
 #hamburger-small-left {
   display: none;
+}
+
+.flex-container-8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container-8 img {
+  max-width: 100%; /* Image will not exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 25%; /* Four images per row by default */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 639px) {
+  .flex-container-8 img {
+    width: 50%; /* Two images per row on screens up to 639px */
+  }
+}
+
+/* Media query for screens between 640px and 1023px */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .flex-container-8 img {
+    width: 33.33%; /* Three images per row on screens between 640px and 1023px */
+  }
 }
 
 @media screen and (max-width: 1320px) {
@@ -107,6 +139,10 @@ h3 {
     justify-content: center;
     padding-top: 2rem;
   }
+  .option-list h3 {
+    padding-right: 0.1rem;
+    padding-top: 0.3rem;
+  }
   #men-women-navbar {
     display: none;
   }
@@ -123,6 +159,10 @@ h3 {
     padding-bottom: 20px;
     justify-content: flex-start;
   }
+  .option-list h3 {
+    padding-right: 1.6rem;
+    padding-top: 0.3rem;
+  }
 
   .option-list div {
     min-width: 100px;
@@ -132,15 +172,24 @@ h3 {
   #top-logo {
     padding-left: 8rem;
   }
+  #max-width-for-phones {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 800px) {
   #top-logo {
     padding-left: 7rem;
   }
+  #to-hide-in-smaller-screens {
+    display: none;
+  }
 }
 @media screen and (max-width: 700px) {
   #top-logo {
     padding-left: 5rem;
+  }
+  #to-hide-in-smaller-screens {
+    display: none;
   }
 }
 
@@ -159,5 +208,34 @@ h3 {
   }
   #top-logo {
     padding-left: 3rem;
+  }
+  #to-hide-in-smaller-screens {
+    display: none;
+  }
+}
+@media screen and (max-width: 560px) {
+  #top-logo {
+    padding-left: 0rem;
+    padding-right: 1rem;
+    margin-left: 0;
+    width: 150px;
+  }
+  #hamburger-small-left {
+    left: 9px;
+    font-size: small;
+  }
+  #search-icon-after-small-screen {
+    font-size: small;
+  }
+  #heart-right {
+    font-size: small;
+    padding-bottom: 0.8rem;
+  }
+  #bag-top-left {
+    font-size: small;
+    padding-bottom: 0.8rem;
+  }
+  #to-hide-in-smaller-screens {
+    display: none;
   }
 }
