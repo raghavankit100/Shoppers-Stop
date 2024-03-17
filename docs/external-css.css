@@ -175,6 +175,9 @@ h3 {
   #max-width-for-phones {
     width: 100%;
   }
+  #small-p-for-phone {
+    font-size: smaller;
+  }
 }
 @media screen and (max-width: 800px) {
   #top-logo {
