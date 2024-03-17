@@ -178,6 +178,10 @@ h3 {
   #small-p-for-phone {
     font-size: smaller;
   }
+  .under-top-bar-div {
+    padding-top: 1px;
+  }
+}
 }
 @media screen and (max-width: 800px) {
   #top-logo {
@@ -186,6 +190,10 @@ h3 {
   #to-hide-in-smaller-screens {
     display: none;
   }
+  .under-top-bar-div {
+    padding-top: 1px;
+  }
+}
 }
 @media screen and (max-width: 700px) {
   #top-logo {
@@ -194,6 +202,9 @@ h3 {
   #to-hide-in-smaller-screens {
     display: none;
   }
+  .under-top-bar-div {
+    padding-top: 1px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -201,7 +212,8 @@ h3 {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding-bottom: 20px;
+    padding-bottom: 1px;
+    padding-top: 10px;
     justify-content: flex-start;
   }
 
@@ -209,6 +221,10 @@ h3 {
     min-width: 100px;
     margin-right: 3px;
   }
+  .under-top-bar-div {
+    padding-top: 5px;
+  }
+
   #top-logo {
     padding-left: 3rem;
   }
