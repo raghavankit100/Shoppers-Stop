@@ -63,6 +63,12 @@ The website UI closely resembles the original Shoppers Stop website, with a clea
 
 ## Screenshots
 
+![Screenshot](Screenshots/Screenshot-1.png)
+![Screenshot](Screenshots/Screenshot-2.png)
+![Screenshot](Screenshots/Screenshot-3.png)
+![Screenshot](Screenshots/Screenshot-4.png)
+![Screenshot](Screenshots/Screenshot-5.png)
+![Screenshot](Screenshots/Screenshot-6.png)
 
 ## Conclusion
 
