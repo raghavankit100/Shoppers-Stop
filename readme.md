@@ -1,6 +1,7 @@
 [HOSTED LINK 🔗](https://nsb199.github.io/Shoppers-Stop/)
+---
 [GitHub Repository](https://github.com/nsb199/Shoppers-Stop)
-
+---
 
 # Shoppers Stop Website Clone
 
@@ -19,7 +20,7 @@
 ## Introduction
 
 This project is a clone of the Shoppers Stop website, created as part of the [Geekster](https://www.geekster.in/) Full Stack Development course as a Major Project for me and my team members:
-1. [Neeraj](https://github.com/nsb199/Shoppers-Stop) (Team Captain)
+1. [Neeraj](https://github.com/nsb199) (Team Captain)
 2. [Anurag Shukla]()
 3. [Prem Chavan]()
 4. [Ankit Raghav]()
